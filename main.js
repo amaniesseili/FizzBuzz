@@ -23,9 +23,33 @@ const chessBoardContainer = document.querySelector(".chessboard");
 const totalSquares = 7 * 7;  
 
 
+// perche quando i square sono spariti 
+// quando ho scritto le condizioni giu?????????
+
+
 for (let i = 0; i < totalSquares; i++){
     // creao il il div in js dentro il container
-    const singleSquare = `<div class="square"></div>`;
+    let singleSquare = `<div class="square"></div>`;
+    const container = document.createElement("div");
+
+    // for (let i=0; i<=100;i++) {
+    //     singleSquare = " ";
+        
+    //     if ( i % 3 === 0){
+    //         singleSquare += "fizz";
+            
+    //     } 
+    //     if ( i % 5 === 0){
+    //         singleSquare += "buzz";
+    //     } 
+    //     if ( singleSquare === " "){
+    //         singleSquare = i;
+    //     } 
+    // }
+
+
+  
+    
 
     // aggiungo al container giu i siglesquare
     chessBoardContainer.innerHTML += singleSquare;
