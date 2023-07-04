@@ -1,0 +1,15 @@
+.chessboard{
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    
+}
+.square {
+    width: calc(100% / 9) ;
+    aspect-ratio: 1/1;
+    margin: 0.5rem;
+    background-color: aquamarine;
+    border: 1px solid red;
+} 

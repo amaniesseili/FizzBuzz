@@ -15,3 +15,18 @@ for (let i=0; i<=100;i++){
 //  se e multiplicato per 5 viene stampato buzz 
 //  altrimenti si stampa i numero (i)
 
+// ------------------bonus2-----------
+// le celle da creare 8x8
+// e prendo il container dal html
+const chessBoardContainer = document.querySelector(".chessboard");
+// creo un variabile che mi fa il calcolo e poi la uso dentro il ciclo
+const totalSquares = 7 * 7;  
+
+
+for (let i = 0; i < totalSquares; i++){
+    // creao il il div in js dentro il container
+    const singleSquare = `<div class="square"></div>`;
+
+    // aggiungo al container giu i siglesquare
+    chessBoardContainer.innerHTML += singleSquare;
+}
